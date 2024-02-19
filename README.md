@@ -1,2 +1,2 @@
 # node-monocart-coverage
-Monocart coverage reports for node test runner
+`test:coverage` event do NOT provide native V8 coverage data, unable to continue integration.

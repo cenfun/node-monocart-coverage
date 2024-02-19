@@ -1,0 +1,12 @@
+{
+  "name": "node-monocart-coverage",
+  "version": "1.0.0",
+  "description": "Monocart coverage reports for node test runner",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --experimental-test-coverage --test-reporter=./lib/index.js ./test/node-test.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
