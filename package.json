@@ -1,12 +1,26 @@
 {
-  "name": "node-monocart-coverage",
-  "version": "1.0.0",
-  "description": "Monocart coverage reports for node test runner",
-  "main": "lib/index.js",
-  "type": "module",
-  "scripts": {
-    "test": "node --test --experimental-test-coverage --test-reporter=./lib/index.js ./test/node-test.js"
-  },
-  "author": "",
-  "license": "MIT"
+    "name": "node-monocart-coverage",
+    "version": "1.0.0",
+    "description": "Node test runner coverage reporter with monocart coverage reports",
+    "type": "module",
+    "main": "lib/index.js",
+    "scripts": {
+        "test:spec": "node --test-reporter=spec --test tests",
+        "test:coverage": "node --test-reporter=./lib/index.js --test tests"
+    },
+    "files": [
+        "lib"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/node-monocart-coverage.git"
+    },
+    "dependencies": {
+        "monocart-coverage-reports": "^2.10.3"
+    },
+    "devDependencies": {
+        "eslint": "^9.9.0",
+        "eslint-config-plus": "^2.0.2"
+    }
 }
