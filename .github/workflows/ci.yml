@@ -1,0 +1,48 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: CI
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    
+  pull_request:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          - '22'
+          - '20'
+          - '18'
+
+    runs-on: ubuntu-latest
+
+    name: Test Node ${{ matrix.node-version }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js version
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: ''
+      - run: npm install
+      - run: npm run test:coverage
+        env:
+          FORCE_COLOR: true
