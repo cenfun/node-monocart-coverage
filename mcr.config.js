@@ -1,5 +1,5 @@
 export default {
-    logging: 'debug',
+    // logging: 'debug',
     name: 'My Note Coverage Report',
 
     reports: [
