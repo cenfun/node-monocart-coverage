@@ -1,6 +1,6 @@
 {
     "name": "node-monocart-coverage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Node test runner coverage reporter with monocart coverage reports",
     "type": "module",
     "main": "./lib/index.js",
