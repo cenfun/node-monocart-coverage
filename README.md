@@ -14,7 +14,7 @@ npm i node-monocart-coverage -D
 
 ## Usage
 ```sh
-node --test-reporter=node-monocart-coverage --test tests
+node --test-reporter=node-monocart-coverage --test
 ```
 
 ## Config file for Coverage Options 
@@ -30,11 +30,12 @@ See config example [mcr.config.js](./mcr.config.js)
 // mcr.config.js
 export default {
     // logging: 'debug',
-    name: 'My Note Coverage Report',
+    name: 'My Node Test Coverage Report',
 
     reports: [
         'console-details',
-        'v8'
+        'v8',
+        'codecov'
     ],
 
     onEnd: (results) => {

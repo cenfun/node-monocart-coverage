@@ -5,8 +5,8 @@
     "type": "module",
     "main": "lib/index.js",
     "scripts": {
-        "test:spec": "node --test-reporter=spec --test tests",
-        "test:coverage": "node --test-reporter=./lib/index.js --test tests"
+        "test": "node --test",
+        "test:coverage": "node --test-reporter=./lib/index.js --test"
     },
     "files": [
         "lib"
