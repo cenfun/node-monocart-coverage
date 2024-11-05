@@ -9,7 +9,8 @@
     },
     "scripts": {
         "test": "node --test",
-        "test:coverage": "node --test-reporter=./lib/index.js --test"
+        "test:coverage": "node --test-reporter=./lib/index.js --test",
+        "patch": "test:coverage && npx sf publish patch"
     },
     "files": [
         "lib"
