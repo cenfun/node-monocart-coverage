@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Node test runner coverage reporter with monocart coverage reports",
     "type": "module",
-    "main": "lib/index.js",
+    "main": "./lib/index.js",
+    "exports": {
+        ".": "./lib/index.js"
+    },
     "scripts": {
         "test": "node --test",
         "test:coverage": "node --test-reporter=./lib/index.js --test"

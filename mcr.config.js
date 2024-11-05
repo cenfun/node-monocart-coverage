@@ -4,8 +4,8 @@ export default {
 
     reports: [
         'console-details',
-        'v8-json',
         'v8',
+        'v8-json',
         'codecov'
     ],
 

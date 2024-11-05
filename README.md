@@ -25,16 +25,16 @@ node --test-reporter=node-monocart-coverage --test
 - mcr.config.json
 - mcr.config.ts
 
-See config example [mcr.config.js](./mcr.config.js)
 ```js
 // mcr.config.js
 export default {
     // logging: 'debug',
-    name: 'My Node Test Coverage Report',
+    name: 'My Note Coverage Report',
 
     reports: [
         'console-details',
         'v8',
+        'v8-json',
         'codecov'
     ],
 
@@ -42,8 +42,8 @@ export default {
         console.log(`coverage report generated: ${results.reportPath}`);
     }
 };
-
 ```
+See config example [mcr.config.js](./mcr.config.js)
 See [monocart-coverage-reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
 
 ## Changelog
