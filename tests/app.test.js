@@ -1,6 +1,10 @@
-import test from 'node:test';
+import { describe, it } from 'node:test';
 import { app } from '../src/app.js';
 
-test('app', (t) => {
-    app();
+
+describe('group 1', () => {
+    it('app', (t) => {
+        app();
+    });
 });
+

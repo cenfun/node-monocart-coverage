@@ -17,10 +17,10 @@
         "url": "git+https://github.com/cenfun/node-monocart-coverage.git"
     },
     "dependencies": {
-        "monocart-coverage-reports": "^2.10.3"
+        "monocart-coverage-reports": "^2.11.1"
     },
     "devDependencies": {
-        "eslint": "^9.9.0",
+        "eslint": "^9.14.0",
         "eslint-config-plus": "^2.0.2"
     }
 }
