@@ -9,6 +9,10 @@ export default {
         'codecov'
     ],
 
+    entryFilter: {
+        '**/src/**': true
+    },
+
     onEnd: (results) => {
         console.log(`coverage report generated: ${results.reportPath}`);
     }

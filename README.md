@@ -16,6 +16,7 @@ npm i node-monocart-coverage -D
 ```sh
 node --test-reporter=node-monocart-coverage --test
 ```
+The `node-monocart-coverage` reporter extends default `spec` reporter
 
 ## Config file for Coverage Options 
 
@@ -37,6 +38,10 @@ export default {
         'v8-json',
         'codecov'
     ],
+
+    entryFilter: {
+        '**/src/**': true
+    },
 
     onEnd: (results) => {
         console.log(`coverage report generated: ${results.reportPath}`);

@@ -1,5 +1,5 @@
 import { describe, it } from 'node:test';
-import { app } from '../src/app.js';
+import { app } from './src/app.js';
 
 
 describe('group 1', () => {

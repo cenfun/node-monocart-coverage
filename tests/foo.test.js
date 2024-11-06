@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
 
-import { foo } from '../src/app.js';
+import { foo } from './src/app.js';
 
 
 describe('group 2', () => {
